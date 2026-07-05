@@ -43,7 +43,7 @@ See `anomaly_score_distribution.png` for the separation between normal and
 anomalous reconstruction error, and `spectrogram_comparison.png` for what
 the model actually sees.
 
-## Honest limitations (for the presentation Q&A)
+## Upgradations for next phase
 
 - Trained and tested on synthetic data, not real MIMII recordings yet
 - Cavitation-type anomalies had the lowest detection rate among the three
