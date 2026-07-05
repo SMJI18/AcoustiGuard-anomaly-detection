@@ -1,4 +1,4 @@
-# AcoustiGuard — POC Results (Idea Deliberation → Early POC)
+# AcoustiGuard: POC Results (Idea Deliberation → Early POC)
 
 ## What this is
 
@@ -28,7 +28,7 @@ to the model or feature pipeline.
 2. `train_and_eval.py` — converts audio to log-mel spectrograms, trains a
    lightweight autoencoder on normal-only data, evaluates on held-out
    normal + anomalous clips
-3. `export_onnx.py` — exports the trained model to ONNX for edge deployment
+3. `export_onnx.py` - exports the trained model to ONNX for edge deployment
 
 ## Results
 
@@ -36,7 +36,7 @@ to the model or feature pipeline.
   on healthy machine sound it hasn't seen before
 - **Anomaly detection rate: 46/60 (76.7%)** across three distinct fault types
 - **Overall accuracy: 83.3%**
-- **Model size: 3.4 KB** as ONNX — trivially deployable on microcontroller-class
+- **Model size: 3.4 KB** as ONNX- trivially deployable on microcontroller-class
   edge hardware
 
 See `anomaly_score_distribution.png` for the separation between normal and
@@ -47,7 +47,7 @@ the model actually sees.
 
 - Trained and tested on synthetic data, not real MIMII recordings yet
 - Cavitation-type anomalies had the lowest detection rate among the three
-  fault types — subtler spectral signature, likely needs a slightly deeper
+  fault types- subtler spectral signature, likely needs a slightly deeper
   encoder or more training epochs on real data
 - INT8 quantization step hit a tooling issue in this sandbox and needs to
   be re-run in a normal dev environment before the Stage 2 POC
